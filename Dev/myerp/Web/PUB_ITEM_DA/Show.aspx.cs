@@ -1,0 +1,64 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using System.Text;
+namespace MyERP.Web.PUB_ITEM_DA
+{
+    public partial class Show : Page
+    {        
+        		public string strid=""; 
+		protected void Page_Load(object sender, EventArgs e)
+		{
+			if (!Page.IsPostBack)
+			{
+				if (Request.Params["id"] != null && Request.Params["id"].Trim() != "")
+				{
+					strid = Request.Params["id"];
+					string ITEM_INTERNAL_CODE= strid;
+					ShowInfo(ITEM_INTERNAL_CODE);
+				}
+			}
+		}
+		
+	private void ShowInfo(string ITEM_INTERNAL_CODE)
+	{
+		MyERP.BLL.PUB_ITEM_DA bll=new MyERP.BLL.PUB_ITEM_DA();
+		MyERP.Model.PUB_ITEM_DA model=bll.GetModel(ITEM_INTERNAL_CODE);
+		this.lblITEM_INTERNAL_CODE.Text=model.ITEM_INTERNAL_CODE;
+		this.lblCUSTOM_CODE.Text=model.CUSTOM_CODE;
+		this.lblCUSTOM_NAME.Text=model.CUSTOM_NAME;
+		this.lblITEM_NO.Text=model.ITEM_NO;
+		this.lblITEM_CODE.Text=model.ITEM_CODE;
+		this.lblITEM_CODE_old.Text=model.ITEM_CODE_old;
+		this.lblITEM_NAME.Text=model.ITEM_NAME;
+		this.lblITEM_COLOR.Text=model.ITEM_COLOR;
+		this.lblPARENT_ITEM_CODE.Text=model.PARENT_ITEM_CODE;
+		this.lblITEM_TYPE.Text=model.ITEM_TYPE;
+		this.lblSPECIFICATIONS.Text=model.SPECIFICATIONS;
+		this.lblMEASURE_UNIT.Text=model.MEASURE_UNIT;
+		this.lblTYPE_NAME.Text=model.TYPE_NAME;
+		this.lblNET_PRICE.Text=model.NET_PRICE.ToString();
+		this.lblPRICE.Text=model.PRICE.ToString();
+		this.lblPOSITION.Text=model.POSITION;
+		this.lblIMAGE.Text=model.IMAGE.ToString();
+		this.lblIMAGE_NAME.Text=model.IMAGE_NAME;
+		this.lblActual_Qty.Text=model.Actual_Qty.ToString();
+		this.lblBARCODE.Text=model.BARCODE;
+		this.lblCREATE_NAME.Text=model.CREATE_NAME;
+		this.lblCREATE_DATE.Text=model.CREATE_DATE.ToString();
+		this.lblUPDATE_NAME.Text=model.UPDATE_NAME;
+		this.lblUPDATE_DATE.Text=model.UPDATE_DATE.ToString();
+		this.lblREMARK.Text=model.REMARK;
+
+	}
+
+
+    }
+}

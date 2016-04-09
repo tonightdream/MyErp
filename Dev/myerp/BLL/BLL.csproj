@@ -1,0 +1,208 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{38D7AA58-C95B-449B-86C6-A8073A56E11F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>MyERP.BLL</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MyERP.BLL</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Maticsoft.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Maticsoft.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CL_ITEM_STOCK_DETAIL.cs" />
+    <Compile Include="CL_ITEM_STOCK_DETAIL_BEGIN.cs" />
+    <Compile Include="CL_ITEM_STOCK_DETAIL_BEGIN_RECORD.cs" />
+    <Compile Include="CL_RECEIPT_DETAIL.cs" />
+    <Compile Include="CL_RECEIPT_MASTER.cs" />
+    <Compile Include="ORDER_BOM.cs" />
+    <Compile Include="ORDER_Capacity_chart.cs" />
+    <Compile Include="ORDER_CG_DETAIL.cs" />
+    <Compile Include="ORDER_CG_MASTER.cs" />
+    <Compile Include="ORDER_COMPLAIN.cs" />
+    <Compile Include="ORDER_DETAIL.cs" />
+    <Compile Include="ORDER_MASTER.cs" />
+    <Compile Include="ORDER_PCDETAIL.cs" />
+    <Compile Include="ORDER_PCMASTER.cs" />
+    <Compile Include="ORDER_SEND_DETAIL.cs" />
+    <Compile Include="ORDER_SEND_MASTER.cs" />
+    <Compile Include="ORDER_SEND_REMARK.cs" />
+    <Compile Include="ORDER_SEND_SHD.cs" />
+    <Compile Include="ORDER_SEND_THJL.cs" />
+    <Compile Include="ORDER_SKJL.cs" />
+    <Compile Include="ORDER_TCDETAIL.cs" />
+    <Compile Include="ORDER_THDETAIL.cs" />
+    <Compile Include="ORDER_WGDETAIL.cs" />
+    <Compile Include="ORDER_YSJZ.cs" />
+    <Compile Include="ORDER_ZBCKDETAIL.cs" />
+    <Compile Include="ORDER_ZBPrice.cs" />
+    <Compile Include="ORDER_ZBWGDETAIL.cs" />
+    <Compile Include="ORDER_ZXGG.cs" />
+    <Compile Include="PUB_AREA.cs" />
+    <Compile Include="PUB_BANK.cs" />
+    <Compile Include="PUB_BAR_CODE.cs" />
+    <Compile Include="PUB_BMTMP.cs" />
+    <Compile Include="PUB_COMPANY.cs" />
+    <Compile Include="PUB_COMPANY_TYPE.cs" />
+    <Compile Include="PUB_CONSTANT.cs" />
+    <Compile Include="PUB_CURRENCY.cs" />
+    <Compile Include="PUB_CUSTOM.cs" />
+    <Compile Include="PUB_CUSTOM_TYPE.cs" />
+    <Compile Include="PUB_DEPARTMENT.cs" />
+    <Compile Include="PUB_DICT.cs" />
+    <Compile Include="PUB_FIXEDASSET.cs" />
+    <Compile Include="PUB_ITEM_DA.cs" />
+    <Compile Include="PUB_ITEM_DA_BOM.cs" />
+    <Compile Include="PUB_ITEM_DETAIL.cs" />
+    <Compile Include="PUB_ITEM_LIST.cs" />
+    <Compile Include="PUB_ITEM_PRICE.cs" />
+    <Compile Include="PUB_ITEM_TYPE.cs" />
+    <Compile Include="PUB_PAYMENT_TYPE.cs" />
+    <Compile Include="PUB_PRICE.cs" />
+    <Compile Include="PUB_SALE.cs" />
+    <Compile Include="PUB_STOCK_MASTER.cs" />
+    <Compile Include="PUB_SUPPLY.cs" />
+    <Compile Include="PUB_VEHICLE.cs" />
+    <Compile Include="PUR_PURCHASE_DETAIL.cs" />
+    <Compile Include="PUR_PURCHASE_MASTER.cs" />
+    <Compile Include="SAL_CUSTOM.cs" />
+    <Compile Include="SAL_ITEM_NOW_PRICE.cs" />
+    <Compile Include="SAL_ITEM_STOCK_DETAIL.cs" />
+    <Compile Include="SAL_ITEM_STOCK_DETAIL_BEGIN.cs" />
+    <Compile Include="SAL_ITEM_STOCK_DETAIL_BEGIN_RECORD.cs" />
+    <Compile Include="SAL_RECEIPT_DETAIL.cs" />
+    <Compile Include="SAL_RECEIPT_MASTER.cs" />
+    <Compile Include="STEEL_DA.cs" />
+    <Compile Include="STEEL_DA_BEGIN.cs" />
+    <Compile Include="STEEL_DA_BEGIN_RECORD.cs" />
+    <Compile Include="STEEL_GG.cs" />
+    <Compile Include="STEEL_GG_BOM.cs" />
+    <Compile Include="STEEL_RECEIPT_DETAIL.cs" />
+    <Compile Include="STEEL_RECEIPT_MASTER.cs" />
+    <Compile Include="SYS_MENU.cs" />
+    <Compile Include="SYS_REGISTER.cs" />
+    <Compile Include="SYS_SYSCS.cs" />
+    <Compile Include="SYS_USER.cs" />
+    <Compile Include="SYS_USER_DATARIGHT.cs" />
+    <Compile Include="SYS_USER_GROUP.cs" />
+    <Compile Include="SYS_VERSION.cs" />
+    <Compile Include="VEHICLE_ORD_DETAIL.cs" />
+    <Compile Include="VEHICLE_ORD_MASTER.cs" />
+    <Compile Include="VIP_GRADE.cs" />
+    <Compile Include="VIP_INFO.cs" />
+    <Compile Include="WL_DA.cs" />
+    <Compile Include="WL_DA_BOM.cs" />
+    <Compile Include="WL_RECEIPT_DETAIL.cs" />
+    <Compile Include="WL_RECEIPT_MASTER.cs" />
+    <Compile Include="WL_STOCK_BEGIN.cs" />
+    <Compile Include="WL_STOCK_BEGIN_RECORD.cs" />
+    <Compile Include="WL_STOCK_DETAIL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{9FE00521-3A8B-42B1-814E-585E99407B2E}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995DBB-9836-4647-AD22-865884FDEB9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

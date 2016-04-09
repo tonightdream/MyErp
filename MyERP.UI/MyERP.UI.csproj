@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE12ED96-9540-4EE1-8B34-497756FAF200}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyERP.UI</RootNamespace>
+    <AssemblyName>MyERP.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotices.Designer.cs">
+      <DependentUpon>FrmNotices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CLarchives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CLarchives.Designer.cs">
+      <DependentUpon>F_CLarchives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Clin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Clin.Designer.cs">
+      <DependentUpon>F_Clin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_Clout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_Clout.Designer.cs">
+      <DependentUpon>F_Clout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_CLTH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CLTH.Designer.cs">
+      <DependentUpon>F_CLTH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ItemArchives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ItemArchives.Designer.cs">
+      <DependentUpon>F_ItemArchives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ItemArchives_CUSTOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ItemArchives_CUSTOM.Designer.cs">
+      <DependentUpon>F_ItemArchives_CUSTOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ORD_CGRK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ORD_CGRK.Designer.cs">
+      <DependentUpon>F_ORD_CGRK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PubDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PubDepartment.Designer.cs">
+      <DependentUpon>F_PubDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PubSuppy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PubSuppy.Designer.cs">
+      <DependentUpon>F_PubSuppy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PubType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PubType.Designer.cs">
+      <DependentUpon>F_PubType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PUB_Dict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PUB_Dict.Designer.cs">
+      <DependentUpon>F_PUB_Dict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_PUB_StockDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_PUB_StockDetail.Designer.cs">
+      <DependentUpon>F_PUB_StockDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SALSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SALSE.Designer.cs">
+      <DependentUpon>F_SALSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SYS_CLEAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SYS_CLEAR.Designer.cs">
+      <DependentUpon>F_SYS_CLEAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SYS_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SYS_Menu.Designer.cs">
+      <DependentUpon>F_SYS_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SYS_CS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SYS_CS.Designer.cs">
+      <DependentUpon>F_SYS_CS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SYS_PassWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SYS_PassWord.Designer.cs">
+      <DependentUpon>F_SYS_PassWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SYS_REGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SYS_REGISTER.Designer.cs">
+      <DependentUpon>F_SYS_REGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SYS_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SYS_USER.Designer.cs">
+      <DependentUpon>F_SYS_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_VEHICLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_VEHICLE.Designer.cs">
+      <DependentUpon>F_VEHICLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmNotices.resx">
+      <DependentUpon>FrmNotices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ItemArchives.resx">
+      <DependentUpon>F_ItemArchives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ItemArchives_CUSTOM.resx">
+      <DependentUpon>F_ItemArchives_CUSTOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ORD_CGRK.resx">
+      <DependentUpon>F_ORD_CGRK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SYS_CLEAR.resx">
+      <DependentUpon>F_SYS_CLEAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SYS_CS.resx">
+      <DependentUpon>F_SYS_CS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SYS_Menu.resx">
+      <DependentUpon>F_SYS_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SYS_USER.resx">
+      <DependentUpon>F_SYS_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyERP.BLL\MyERP.BLL.csproj">
+      <Project>{050367b1-4823-41a1-8706-bf4f0adf442a}</Project>
+      <Name>MyERP.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyERP.COMMON\MyERP.COMMON.csproj">
+      <Project>{1ca99073-a42f-4c19-b94d-14505926a9e0}</Project>
+      <Name>MyERP.COMMON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyERP.DAL\MyERP.DAL.csproj">
+      <Project>{6f0aecb9-cf04-4068-9a13-074af2afce3d}</Project>
+      <Name>MyERP.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyERP.Model\MyERP.Model.csproj">
+      <Project>{be1807ed-fd13-4317-9a97-6254f4fab008}</Project>
+      <Name>MyERP.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
